@@ -1,5 +1,5 @@
 learn git 2019-6-19
-
+#参考自 廖雪峰 Git教程
 version1.0
 #Git is a version control system.
 
@@ -26,5 +26,31 @@ A：因为commit一次可以提交很多文件
 	eg:$git add file1.txt
 	   $git add file2.txt file3.txt
 	   $git commit -m "add three files at one time"
+
+"""
+
+Version3.0
+git status
+#掌握仓库当前状态 那些文件修改了还没提交
+#一次失败记录
+"""
+第一次：
+修改readme.txt 文件后 直接git add 并且commit了
+使用git status 查看git中文件的状态时 没有显示文件的修改情况
+第二次：
+修改readme.txt文件后 不加add 也不commit 
+直接输入 $git status 
+出现了两个文件的前后对比，新增了三条记录，显示+号
+如果删除，应该是显示-号，暂时没有尝试
+第三次：
+想知道add但是不commit 进行比较是怎样的情况
+对readme.txt进行修改并且add之后
+$git status
+显示readme.txt文件modified
+$git diff readme.txt
+没有出现文件比对
+
+所以commit之后 文件状态已经修改 $git status 无法查看文件修改情况
+而add之后 $git status可以知道文件本身状态 diff命令比对文件内容在add之后就无法做到了
 
 """
