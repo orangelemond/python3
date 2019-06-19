@@ -70,3 +70,7 @@ Head～100 表示往上100个版本
 Version5.0
 
 #时光穿梭
+$git reset --hard commit_id
+$git reflog 记录了每一次命令 可以在里面查看commit_id
+
+
