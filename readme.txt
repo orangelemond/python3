@@ -73,4 +73,4 @@ Version5.0
 $git reset --hard commit_id
 $git reflog 记录了每一次命令 可以在里面查看commit_id
 
-
+#git push origin master 推送最新修改
