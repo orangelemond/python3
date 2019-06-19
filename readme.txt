@@ -54,3 +54,18 @@ $git diff readme.txt
 而add之后 $git status可以知道文件本身状态 diff命令比对文件内容在add之后就无法做到了
 
 """
+
+
+version4.0 
+
+"""
+$git reset --hard HEAD^
+#--hard参数暂时属于黑盒状态，字面意思猜测可能是回退的状态判断 回退程度？
+HEAD 表示当前状态，也就是最新提交的版本
+HEAD^ 表示上一个版本
+HEAD^^ 表示上上个版本
+Head～100 表示往上100个版本
+"""
+
+Version5.0
+
