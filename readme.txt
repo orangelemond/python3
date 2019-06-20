@@ -72,5 +72,7 @@ Version5.0
 #时光穿梭
 $git reset --hard commit_id
 $git reflog 记录了每一次命令 可以在里面查看commit_id
-
+$git push -u origin master 
+#第一次推送加上 -u 参数 可以把本地仓库和远程仓库的master分支连起来，以后推送的时候可以简化命令
 #git push origin master 推送最新修改
+$git remote -v 关联其他仓库时要先把原来关联的仓库删掉
